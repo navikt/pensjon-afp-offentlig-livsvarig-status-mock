@@ -25,6 +25,7 @@ class MockOppsettController(
         @PathVariable("fnr") fnr: String,
         @RequestBody status: AfpOffentligStatusMockOppsett
     ) {
+        status.mocksvar?.filter { it -> it.sistBenyttetG != null }?.forEach { it.sistBenyttetG = 124028 }
         hentAfpStatusRepository.deleteById(fnr)
         hentAfpStatusRepository.save(PersonMockOppsett(fnr, status))
     }
