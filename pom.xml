@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>21</java.version>
 		<flyway.version>10.17.3</flyway.version>
-		<kotlin.version>2.1.10</kotlin.version>
+		<kotlin.version>2.1.21</kotlin.version>
 		<logback-access.version>2.0.6</logback-access.version>
 		<logstash-logback-encoder.version>8.1</logstash-logback-encoder.version>
 	</properties>
