@@ -30,6 +30,9 @@ spec:
         - application: testnav-pensjon-testdata-facade-proxy-trygdeetaten
           namespace: dolly
           cluster: dev-fss
+        - application: testnav-dolly-proxy-trygdeetaten
+          namespace: dolly
+          cluster: dev-fss
         - application: "{{pen.name}}"
           namespace: "{{pen.namespace}}"
           cluster: "{{pen.cluster}}"
