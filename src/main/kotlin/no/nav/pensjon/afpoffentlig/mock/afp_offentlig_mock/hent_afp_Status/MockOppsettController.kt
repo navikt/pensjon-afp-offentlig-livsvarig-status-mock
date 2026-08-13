@@ -16,7 +16,7 @@ class MockOppsettController(
     val hentAfpStatusRepository: HentAfpStatusRepository,
 ) {
     @GetMapping("/{fnr}")
-    fun hentMockForPerson(@PathVariable("fnr") fnr: String): ResponseEntity<AfpOffentligStatusMockOppsett?> {
+    fun hentMockForPerson(@PathVariable("fnr") fnr: String): ResponseEntity<AfpOffentligStatusMockOppsett> {
         return ResponseEntity.ofNullable(hentAfpStatusRepository.findById(fnr).getOrNull()?.mockOppsett)
     }
 
