@@ -1,10 +1,10 @@
 ### Henter for SPK
-GET {{baseUrl}}/api/afp-offentlig-status/spk/hentAfpStatus/12345678901
+GET {{baseUrl}}/api/afp-offentlig-status/spk/hentAfpStatus/24495832240
 X-TPID: 3010
 
 
 ### Lagre mock-oppsett
-PUT {{baseUrl}}/api/mock-oppsett/12345678901
+PUT {{baseUrl}}/api/mock-oppsett/16437817972
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
   "mocksvar": [
     {
       "tpId": "3010",
-      "fnr": "12345678901",
+      "fnr": "16437817972",
       "statusAfp": "INNVILGET",
       "virkningsDato": "2024-02-01",
       "sistBenyttetG": 120000,
@@ -29,40 +29,8 @@ Content-Type: application/json
           "belop": 5300
         }
       ]
-    },
-    {
-      "tpId": "3200",
-      "fnr": "12345678901",
-      "statusAfp": "SOKT",
-      "virkningsDato": "2024-02-01",
-      "sistBenyttetG": null,
-      "belopsListe": []
-    },
-    {
-      "tpId": "3660",
-      "fnr": "12345678901",
-      "statusAfp": "AVSLAG",
-      "virkningsDato": "2024-02-01",
-      "sistBenyttetG": null,
-      "belopsListe": []
-    },
-    {
-      "tpId": "3860",
-      "fnr": "12345678901",
-      "statusAfp": "IKKE_SOKT",
-      "virkningsDato": null,
-      "sistBenyttetG": null,
-      "belopsListe": []
-    },
-    {
-      "tpId": "3820",
-      "fnr": "12345678901",
-      "statusAfp": "UKJENT",
-      "virkningsDato": null,
-      "sistBenyttetG": null,
-      "belopsListe": []
     }
-  ]
+    ]
 }
 
 
@@ -71,7 +39,7 @@ DELETE {{baseUrl}}/api/mock-oppsett/12345678901
 
 
 ### Hent mock-oppsett
-GET {{baseUrl}}/api/mock-oppsett/12345678901
+GET {{baseUrl}}/api/mock-oppsett/24495832240
 
 
 ### Mulige direkte kall
