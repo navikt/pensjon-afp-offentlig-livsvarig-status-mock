@@ -25,7 +25,7 @@ class AfpOffentligStatusController(
                 statusAfp = "IKKE_SOKT",
                 virkningsDato = null,
                 sistBenyttetG = null,
-                belopsListe = null,
+                belopsListe = emptyList(),
             )
     }
 }
