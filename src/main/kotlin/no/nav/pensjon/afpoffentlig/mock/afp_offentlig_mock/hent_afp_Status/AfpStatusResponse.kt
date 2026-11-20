@@ -14,7 +14,7 @@ data class AfpStatusResponse(
     val statusAfp: String?,
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "Europe/Oslo") val virkningsDato: LocalDate?,
     var sistBenyttetG: Int?,
-    val belopsListe: List<BelopDato>?,
+    val belopsListe: List<BelopDato>,
 ) {
     data class BelopDato(
         @JsonFormat(pattern = "yyyy-MM-dd", timezone = "Europe/Oslo")
